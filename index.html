@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+  <script src="app.js" charset="utf-8"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <title>Candy Crush Clone</title>
+</head>
+<body>
+  <div class="container">
+    <button
+    onclick=""
+    value="start" 
+    id="toggle-audio"
+    >
+      <i id="audio-icon" class="fas fa-volume-up" ></i>
+    </button>
+    <audio 
+      id="my-audio"   
+      loop 
+      autoplay
+    >
+      <source src="./assets/songs/Candy Crush Loop5.mp3" type="audio/mpeg">
+    </audio>
+    <div class="score-board">
+      <h1>Score</h1>
+      <h1 id="score"></h1>
+    </div>
+
+    <div class="grid">
+      <button
+        onclick=""
+        value="start" 
+        id="start-button"
+      >
+        <h1>Start</h1>
+      </button>
+    </div>
+  </div>
+  
+</body>
+</html>

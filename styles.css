@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  font-family: 'Courgette', cursive;
+}
+
+.container {
+  display: flex;
+  width: auto;
+
+
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+
+  background-attachment: fixed;
+  overflow-block: inherit;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+audio {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.grid {
+  width: 560px;
+  height: 560px;
+  min-width: 560px;
+
+  display: flex;
+  flex-wrap: wrap;
+  
+
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 rgb(134, 186, 221);
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 4px;
+  border: dashed 6px rgb(138, 66, 138);
+}
+
+#toggle-audio {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+}
+
+#audio-icon {
+  font-size: 40px;
+  color: rgb(226, 43, 83);
+}
+
+#start-button {
+  width: 560px;
+  height: 560px;
+  min-width: 560px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-image: url('./assets/candy-crush-background-2.png');
+  border-radius: 4px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+   
+}
+
+#start-button h1 {
+  font-size: 50px;
+  color: rgb(138, 66, 138);
+  z-index: 3;
+
+}
+
+.grid div {
+  
+  height: 70px;
+  width: 70px;
+  display: flex;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 50px;
+  background-image: url('./assets/candy-crush-background-2.png');
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 0 0 rgb(134, 186, 221);
+}
+
+h1 {
+
+  color: rgb(138, 66, 138);
+}
+
+@media (max-width: 890px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .score-board {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 60px;
+    width: 400px;
+    margin-bottom: 15px;
+  }
+}
