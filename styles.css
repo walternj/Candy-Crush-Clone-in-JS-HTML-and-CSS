@@ -9,24 +9,48 @@ body {
 
 .container {
   display: flex;
-  width: auto;
-
-
-  background-image: url(./assets/background.jpg);
-  background-size: cover;
-
-  background-attachment: fixed;
-  overflow-block: inherit;
+  flex-direction: column;
   width: 100vw;
   height: 100vh;
   align-items: center;
   justify-content: center;
+
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title {
+  position: absolute;
+  top: 15px;
+  left: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.title h1 {
+  font-size: 45px;
+  line-height: 45px;
+  color: rgb(207, 30, 66);
+  margin: 0;
+  padding: 0;
+}
+
+.title p {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
 }
 
 audio {
   position: absolute;
   top: 15px;
   left: 15px;
+}
+
+.grid-container {
+  display: flex;
+  align-items: center;
 }
 
 .grid {
@@ -89,6 +113,19 @@ audio {
 
 }
 
+.links {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  outline: none;
+}
+.links i {
+  font-size: 26px;
+  margin-left: 10px;
+  padding: 0;
+ 
+}
+
 .grid div {
   
   height: 70px;
@@ -109,13 +146,17 @@ audio {
 }
 
 h1 {
-
   color: rgb(138, 66, 138);
 }
 
 @media (max-width: 890px) {
-  .container {
+  .grid-container {
     flex-direction: column;
+  }
+
+  .title {
+    left: 50px;
+    font-size: 36px;
   }
 
   .score-board {

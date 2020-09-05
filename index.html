@@ -11,6 +11,11 @@
 </head>
 <body>
   <div class="container">
+    <div class="title">
+      <h1>Candy Crush Clone</h1>
+      <p>by WalterNJ</p>
+    </div>
+
     <button
     onclick=""
     value="start" 
@@ -18,6 +23,7 @@
     >
       <i id="audio-icon" class="fas fa-volume-up" ></i>
     </button>
+
     <audio 
       id="my-audio"   
       loop 
@@ -25,21 +31,34 @@
     >
       <source src="./assets/songs/Candy Crush Loop5.mp3" type="audio/mpeg">
     </audio>
-    <div class="score-board">
-      <h1>Score</h1>
-      <h1 id="score"></h1>
-    </div>
 
-    <div class="grid">
-      <button
-        onclick=""
-        value="start" 
-        id="start-button"
-      >
-        <h1>Start</h1>
-      </button>
-    </div>
-  </div>
+    <div class="grid-container">
+      <div class="score-board">
+        <h1>Score</h1>
+        <h1 id="score"></h1>
+      </div>
   
+      <div class="grid">
+        <button
+          onclick=""
+          value="start" 
+          id="start-button"
+        >
+          <h1>Start</h1>
+        </button>
+      </div>
+    </div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/walter-nunes-jr" target="new">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/walternj" target="new">
+        <i class="fab fa-git-square"></i>
+      </a>
+      <a href="https://walternj-portifolio.netlify.app" target="new">
+        <i class="far fa-window-maximize"></i>
+      </a>
+    </div>
+  </div> 
 </body>
 </html>
